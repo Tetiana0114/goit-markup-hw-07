@@ -64,12 +64,13 @@
   justify-content: center;
   align-items: center;
   transition: background-color var(--main-transition), color var(--main-transition);
+  &:hover,
+  &:focus {
+    background-color: var(--hover-and-focus-color);
+    color: var(--text-white);
+  }
 }
-.team-social-link:hover,
-.team-social-link:focus {
-  background-color: var(--hover-and-focus-color);
-  color: var(--text-white);
-}
+
 .team-social-svg {
   fill: currentColor;
 }

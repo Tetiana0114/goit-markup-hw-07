@@ -5,10 +5,10 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--hover-and-focus-color);
-}
-.logo--black {
-  color: var(--black-color);
-}
-.logo--white {
-  color: var(--text-white);
+  &--black {
+    color: var(--black-color);
+  }
+  &--white {
+    color: var(--text-white);
+  }
 }

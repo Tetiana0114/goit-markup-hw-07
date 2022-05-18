@@ -2,11 +2,12 @@
   background-color: var(--footer-backround-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  &__logo {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
 }
-.footer__logo {
-  display: inline-block;
-  margin-bottom: 20px;
-}
+
 .studio {
   margin-bottom: 0;
 }
@@ -20,6 +21,10 @@
   letter-spacing: 0.03em;
   color: var(--text-white);
   transition: color var(--main-transition);
+  &:hover,
+  &:focus {
+    color: var(--hover-and-focus-color);
+  }
 }
 .footer-mail,
 .footer-tel {
@@ -29,18 +34,15 @@
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   transition: color var(--main-transition);
+  &:hover,
+  &:focus {
+    color: var(--hover-and-focus-color);
+  }
 }
 .footer-contact-item:not(:last-child) {
   margin-bottom: 9px;
 }
-.footer-adress:hover,
-.footer-adress:focus,
-.footer-mail:hover,
-.footer-mail:focus,
-.footer-tel:hover,
-.footer-tel:focus {
-  color: var(--hover-and-focus-color);
-}
+
 /*социальные сети футер*/
 .footer-container {
   display: flex;
@@ -85,11 +87,12 @@
   justify-content: center;
   align-items: center;
   transition: background-color var(--main-transition);
+  &:hover,
+  &:focus {
+    background-color: var(--hover-and-focus-color);
+  }
 }
-.footer-soc-link:hover,
-.footer-soc-link:focus {
-  background-color: var(--hover-and-focus-color);
-}
+
 .footer-soc-svg {
   fill: currentColor;
 }
@@ -126,10 +129,11 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   outline: none;
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
-.footer-input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
-}
+
 .footer-subcribe-btn {
   display: flex;
   align-items: center;
@@ -140,11 +144,12 @@
   border-radius: 4px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color var(--main-transition);
+  &:hover,
+  &:focus {
+    background-color: var(--second-btn-color);
+  }
 }
-.footer-subcribe-btn:hover,
-.footer-subcribe-btn:focus {
-  background-color: var(--second-btn-color);
-}
+
 .footer-form-svg {
   fill: currentColor;
   display: block;
