@@ -7,4 +7,18 @@
   color: var(--text-white);
   background-color: var(--hover-and-focus-color);
   cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  &--light {
+    color: var(--main-color);
+    background-color: var(--main-btn-color);
+  }
+  &--shadow {
+    box-shadow: none;
+  }
+  &--text-style {
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+  }
 }
